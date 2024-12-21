@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SpaceParty</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="Author: Garshin K. V. Enter Text">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241221165114">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body id="bg-form">
+	<div class="wrapper">
+		<header class="header header--setup">
+			<div class="header__content">
+
+				<div class="menu">
+
+					<div class="menu__block">
+
+						<img src="img/items_svg/logo.svg" alt="Space Party" class="menu__logo-pic" width="206" height="100">
+
+						<nav class="menu__body">
+							<img src="img/items_svg/logo.svg" alt="Space Party" class="menu__logo-burger" width="138" height="97">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="#" class="menu__link">главная</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">мероприятия</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">faq</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">галерея</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">прошедшие</a></li>
+							</ul>
+						</nav>
+
+						<div class="menu__element">
+							<div class="menu__group-items" data-da=".menu__body,991,2">
+								<button type="button" class="menu__btn-enter">Вход</button>
+								<div class="menu__icons-box social">
+									<a href="#" target="_blank" title="Telegram" class="social__link"><img src="img/items_svg/icon_telegram.svg" alt="Telegram" class="social__thumb" width="26" height="26"></a>
+									<a href="https://m.vk.com/" title="ВКонтакте" target="_blank" class="social__link"><img src="img/items_svg/icon_vk.svg" alt="ВКонтакте" class="social__thumb" width="26" height="26"></a>
+									<a href="https://www.instagram.com/" title="Instagram" target="_blank" class="social__link"><img src="img/items_svg/icon_instagram_footer.svg" alt="Instagram" class="social__thumb" width="26" height="26"></a>
+								</div>
+							</div>
+							<button type="button" class="menu__icon icon-menu" aria-label="Burger Menu"><span></span></button>
+						</div>
+
+					</div>
+
+				</div>
+
+				<!-- TODO LInks -->
+				<section class="links links--setup">
+					<div class="links__container">
+						<ul class="links__list">
+							<li class="links__item-control"><a href="admin-panel-login.html" class="links__link">Вход в админ меню</a></li>
+							<span> - </span>
+							<li class="links__item-control"><a href="admin-menu.html" class="links__link">Админ меню </a></li>
+							<span> - </span>
+							<li class="links__item-control"><a href="new-faq.html" class="links__link">Создать Faq</a></li>
+							<span> - </span>
+							<li class="links__item-control"><a href="edit-faq.html" class="links__link">Правка Faq</a></li>
+							<span> - </span>
+							<li class="links__item-control"><a href="new-party.html" class="links__link">Создать Party</a></li>
+							<span> - </span>
+							<li class="links__item-control"><a href="edit-party.html" class="links__link">Правка Party</a></li>
+							<span> - </span>
+							<li class="links__item-control"><a href="edit-faq-menu.html" class="links__link">Правка меню Faq</a></li>
+							<span> - </span>
+							<li class="links__item-control"><a href="list-party.html" class="links__link">Список Party</a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</header>
+
+		<main class="form form--option">
+			<div class="form__content">
+				<div class="form__background">
+					<div class="form__admin-body">
+						<div class="form__structure">
+							<h1 class="form__title-form">Редактирование мероприятия</h1>
+							<form class="admin-form-elem" action="#" method="GET" enctype="multipart/form-data">
+								<div class="admin-form-elem__area-items">
+									<label for="title-editparty-form" class="admin-form-elem__label-cell">Заголовок
+										<input id="title-editparty-form" type="text" class="admin-form-elem__input-cell" name="title-party-edit-form" placeholder="Введите новый заголовок" autocomplite="off" required>
+									</label>
+									<label for="desc-editparty-form" class="admin-form-elem__label-cell">Описание
+										<input id="desc-editparty-form" type="text" class="admin-form-elem__input-cell" name="desk-party-edit-form" placeholder="Введите новое описание" autocomplite="off" required>
+									</label>
+									<label for="img-editparty-form" class="admin-form-elem__label-cell">Ссылка на изображение
+										<div class="admin-form-elem__item-control">
+											<input id="img-editparty-form" type="text" class="admin-form-elem__input-cell" name="img-party-edit-form" placeholder="Введите новую ссылку на изображение" autocomplite="off" required>
+										</div>
+									</label>
+
+									<div class="admin-form-elem__box-panel box-panel">
+										<div class="box-panel__item-body">
+											<input id="checkbox-edit-party" type="checkbox" class="box-panel__input-checkbox" name="checkbox-edit-party">
+											<label for="checkbox-edit-party" class="box-panel__label-other box-panel__label-other--checkbox">Прошедшее</label>
+										</div>
+
+										<div class="box-panel__item-body">
+											<input id="age-edit-party" type="text" class="box-panel__input-other" name="age-edit-party" placeholder="___" autocomplite="off" required>
+											<label for="age-edit-party" class="box-panel__label-other">Возраст</label>
+										</div>
+
+										<div class="box-panel__item-body">
+
+											<div class="box-panel__time-period time-period">
+												<input id="timestart-edit-party" type="text" class="time-period__input-other" name="checkbox-edit-party" placeholder="0:00" autocomplite="off" required>
+												<span class="time-period__dash">-</span>
+												<input id="timeend-edit-party" type="text" class="time-period__input-other" name="checkbox-edit-party" placeholder="0:00" autocomplite="off" required>
+											</div>
+
+											<div class="box-panel__label-time">Время</div>
+										</div>
+									</div>
+
+								</div>
+								<button type="button" id="action-btn-form-edit-party" class="admin-form-elem__action-form">Сохранить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__content">
+				<div class="footer__body">
+
+
+					<div class="footer__info-block info-block">
+
+						<img src="img/items_svg/logo.svg" alt="Space Party" class="footer__logo-footer" width="136" height="64">
+
+						<div class="info-block__desc desk">
+							<div class="desk__main-data">
+								<div class="desk__item-info">New project by spaceparty</div>
+								<div class="desk__item-info">Эдгар Эдгаров Эдгарович</div>
+								<div class="desk__item-info">ИНН: 6656435172766</div>
+								<div class="desk__item-info">ОГРНИП: 4574273657547547</div>
+							</div>
+							<div class="desk__contact"><a href="mailto:space@admin.com" class="desk__jump-link">space@admin.com</a> <span>/</span> <a href="tel:+79109449243" class="desk__jump-link">+79109449243</a>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="info-block__icon-social icon-social" data-da=".desk__main-data,768,0">
+						<a href="https://m.vk.com/" target="_blank" title="ВКонтакте" class="icon-social__link-item">
+							<svg id="icon-vk" class="icon-social__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31">
+								<defs>
+									<style></style>
+								</defs>
+								<g>
+									<path d="M27.89,0H3.11C1.39,0,0,1.39,0,3.11v24.78c0,1.72,1.39,3.11,3.11,3.11h24.78c1.72,0,3.11-1.39,3.11-3.11V3.11c0-1.72-1.39-3.11-3.11-3.11ZM25.08,21.55h-2.28c-.87,0-1.12-.68-2.67-2.19-1.35-1.27-1.93-1.44-2.27-1.44-.46,0-.6.13-.6.76v2c0,.55-.18.87-1.63.87-2.42,0-5.07-1.43-6.96-4.08-2.83-3.87-3.6-6.8-3.6-7.39,0-.33.13-.63.78-.63h2.28c.58,0,.8.25,1.02.87,1.12,3.17,3,5.95,3.77,5.95.29,0,.42-.13.42-.85v-3.28c-.08-1.51-.9-1.63-.9-2.17,0-.25.22-.51.58-.51h3.59c.48,0,.65.25.65.82v4.41c0,.47.21.64.35.64.29,0,.53-.17,1.06-.68,1.64-1.79,2.8-4.55,2.8-4.55.15-.33.41-.63.99-.63h2.28c.69,0,.84.35.69.82-.29,1.3-3.07,5.12-3.07,5.12-.24.38-.34.57,0,.99.24.33,1.04.99,1.57,1.6.98,1.08,1.72,1.98,1.92,2.61.19.63-.14.95-.79.95Z" />
+								</g>
+							</svg>
+						</a>
+						<a href="#" target="_blank" title="Telegram" class="icon-social__link-item">
+							<svg id="icon-telegram" class="icon-social__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31">
+								<defs>
+									<style></style>
+								</defs>
+								<g>
+									<path d="M15.5,0C6.94,0,0,6.94,0,15.5s6.94,15.5,15.5,15.5,15.5-6.94,15.5-15.5S24.06,0,15.5,0ZM22.68,10.53c-.23,2.45-1.24,8.4-1.76,11.14-.22,1.16-.65,1.55-1.06,1.59-.9.08-1.59-.59-2.45-1.16-1.37-.89-2.13-1.45-3.46-2.32-1.54-1.01-.54-1.56.34-2.47.23-.23,4.19-3.85,4.27-4.17.01-.04.01-.19-.08-.27-.09-.08-.22-.05-.32-.03-.14.03-2.31,1.47-6.53,4.32-.62.43-1.17.63-1.68.62-.55-.01-1.61-.31-2.41-.57-.97-.31-1.74-.48-1.68-1.02.04-.28.43-.57,1.15-.86,4.52-1.96,7.52-3.27,9.03-3.9,4.3-1.79,5.2-2.1,5.78-2.12.13,0,.41.03.61.18.15.13.19.3.22.43.03.13.05.4.03.61Z" />
+								</g>
+							</svg>
+						</a>
+
+						<a href="hhttps://www.instagram.com/" target="_blank" title="Instagram" class="icon-social__link-item">
+							<svg id="icon-instagram" class="icon-social__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31">
+								<defs>
+									<style></style>
+								</defs>
+								<g>
+									<g>
+										<circle cx="15.5" cy="15.5" r="5.49" />
+										<path d="M22.33,0h-13.66C3.88,0,0,3.88,0,8.67v13.65c0,4.79,3.88,8.67,8.67,8.67h13.66c4.79,0,8.67-3.88,8.67-8.67v-13.65c0-4.79-3.88-8.67-8.67-8.67ZM15.5,23.29c-4.29,0-7.78-3.49-7.78-7.79s3.49-7.79,7.78-7.79,7.79,3.49,7.79,7.79-3.49,7.79-7.79,7.79ZM24.59,7.6c-.71,0-1.29-.57-1.29-1.29s.57-1.29,1.29-1.29,1.29.58,1.29,1.29-.58,1.29-1.29,1.29Z" />
+									</g>
+								</g>
+							</svg>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20241221165114"></script>
+</body>
+
+</html>
